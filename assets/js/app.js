@@ -2,7 +2,7 @@ $(document).ready(function () {
   /*splash*/
   setTimeout(function () {
     $(".splash").fadeOut(500);
-  }, 4000);
+  }, 3000);
   setTimeout(function () {
     $(".principal").fadeIn(500);
   });
@@ -11,38 +11,38 @@ $(document).ready(function () {
 
 /** funcion para mostrar la comida rápida */
 $('#chatarra').click(function(){
-  $('.fotitos').html('<h3>Comida Rápida</h3>'+
-                    '<div class= "col s4 col m4">'+
+  $('.fotitos').html('<h4>Comida Rápida</h4>'+
+                    '<div class= "col s4">'+
                       '<img src="assets/img/chatarra/mcdonalds.jpg" alt="" class="circle responsive-img comidas">'+
-                      '<div class="encima">'+
+                      '<div class="encima modal-trigger" href="#mcdonalds">'+
                         '<p class="txt">McDonalds</p>'+
                       '</div>'+
                     '</div>'+
-                    '<div class="col s4 col m4">'+
+                    '<div id="kfc" class="col s4">'+
                       '<img src="assets/img/chatarra/kfc.jpg" alt="" class="circle responsive-img comidas">'+
                       '<div class="encima">'+
                         '<p class="txt">KFC</p>'+
                       '</div>'+
                     '</div>'+
-                    '<div class="col s4 col m4">'+
+                    '<div id="pjd" class="col s4">'+
                       '<img src="assets/img/chatarra/pjd.jpg" alt="" class="circle responsive-img comidas pjd">'+
                       '<div class="encima">'+
                         '<p class="txt">Pedro, Juan Y Diego</p>'+
                       '</div>'+
                     '</div>'+
-                    '<div class="col s4 col m4">'+
+                    '<div id="doggis" class="col s4">'+
                       '<img src="assets/img/chatarra/doggis.jpg" alt="" class="circle responsive-img comidas doggis">'+
                       '<div class="encima">'+
                         '<p class="txt">Doggis</p>'+
                       '</div>'+
                     '</div>'+
-                    '<div class="col s4 col m4">'+
+                    '<div id="juanm" class="col s4">'+
                       '<img src="assets/img/chatarra/juanMaestro.jpg" alt="" class="circle responsive-img comidas maestro">'+
                       '<div class="encima">'+
                         '<p class="txt">Juan Maestro</p>'+
                       '</div>'+
                     '</div>'+
-                    '<div class="col s4 col m4">'+
+                    '<div id="picheira" class="col s4">'+
                       '<img src="assets/img/chatarra/pincheira.jpg" alt="" class="circle responsive-img comidas pincheira">'+
                       '<div class="encima">'+
                         '<p class="txt">Los Pincheira</p>'+
@@ -53,7 +53,7 @@ $('#chatarra').click(function(){
 
 /** funcion para mostrar la comida mexicana */
 $('#mexicana').click(function () {
-  $('.fotitos').html('<h3>Comida Mexicana</h3>' +
+  $('.fotitos').html('<h4>Comida Mexicana</h4>' +
                       '<div class= "col s4 col m4">' +
                         '<img src="assets/img/mexicana/cuates.jpg" alt="" class="circle responsive-img comidas">' +
                         '<div class="encima">' +
@@ -95,7 +95,7 @@ $('#mexicana').click(function () {
 
 /** funcion para mostrar la comida china */
 $('#china').click(function () {
-  $('.fotitos').html('<h3>Comida China</h3>' +
+  $('.fotitos').html('<h4>Comida China</h4>' +
                     '<div class= "col s4 col m4">' +
                       '<img src="assets/img/china/ricos.jpg" alt="" class="circle responsive-img comidas">' +
                       '<div class="encima">' +
@@ -137,7 +137,7 @@ $('#china').click(function () {
 
 /** funcion para mostrar la comida japonesa */
 $('#japonesa').click(function () {
-  $('.fotitos').html('<h3>Comida Japonesa</h3>' +
+  $('.fotitos').html('<h4>Comida Japonesa</h4>' +
                     '<div class= "col s4 col m4">' +
                       '<img src="assets/img/japonesa/sushi.jpg" alt="" class="circle responsive-img comidas">' +
                       '<div class="encima">' +
@@ -180,7 +180,7 @@ $('#japonesa').click(function () {
 
 /** funcion para mostrar la comida italiana */
 $('#italiana').click(function () {
-  $('.fotitos').html('<h3>Comida Italiana</h3>' +
+  $('.fotitos').html('<h4>Comida Italiana</h4>' +
                       '<div class= "col s4 col m4">' +
                         '<img src="assets/img/italiana/taverna.jpg" alt="" class="circle responsive-img comidas">' +
                         '<div class="encima">' +
@@ -222,7 +222,7 @@ $('#italiana').click(function () {
 
 /** funcion para mostrar la comida vegetariana */
 $('#vegetariana').click(function () {
-  $('.fotitos').html('<h3>Comida Vegetariana</h3>' +
+  $('.fotitos').html('<h4>Comida Vegetariana</h4>' +
                       '<div class= "col s4 col m4">' +
                         '<img src="assets/img/vege/manati.jpg" alt="" class="circle responsive-img comidas">' +
                         '<div class="encima">' +
@@ -264,43 +264,43 @@ $('#vegetariana').click(function () {
 
 /** funcion para mostrar la comida peruana */
 $('#peruana').click(function () {
-  $('.fotitos').html('<h3>Comida Peruana</h3>' +
-    '<div class= "col s4 col m4">' +
-    '<img src="assets/img/vege/manati.jpg" alt="" class="circle responsive-img comidas">' +
-    '<div class="encima">' +
-    '<p class="txt">Manatí</p>' +
-    '</div>' +
-    '</div>' +
-    '<div class="col s4 col m4">' +
-    '<img src="assets/img/vege/chakra.jpg" alt="" class="circle responsive-img comidas">' +
-    '<div class="encima">' +
-    '<p class="txt">La Chakra</p>' +
-    '</div>' +
-    '</div>' +
-    '<div class="col s4 col m4">' +
-    '<img src="assets/img/vege/huerto.jpg" alt="" class="circle responsive-img comidas pjd">' +
-    '<div class="encima">' +
-    '<p class="txt">El Huerto</p>' +
-    '</div>' +
-    '</div>' +
-    '<div class="col s4 col m4">' +
-    '<img src="assets/img/vege/govindas.jpg" alt="" class="circle responsive-img comidas doggis">' +
-    '<div class="encima">' +
-    '<p class="txt">Govindas Restaurant Vegetariano</p>' +
-    '</div>' +
-    '</div>' +
-    '<div class="col s4 col m4">' +
-    '<img src="assets/img/vege/verde.jpg" alt="" class="circle responsive-img comidas maestro">' +
-    '<div class="encima">' +
-    '<p class="txt">Puro Verde</p>' +
-    '</div>' +
-    '</div>' +
-    '<div class="col s4 col m4">' +
-    '<img src="assets/img/vege/chancho.jpg" alt="" class="circle responsive-img comidas pincheira">' +
-    '<div class="encima">' +
-    '<p class="txt">El Chancho Seis</p>' +
-    '</div>' +
-    '</div>'
+  $('.fotitos').html('<h4>Comida Peruana</h4>' +
+                      '<div class= "col s4 col m4">' +
+                        '<img src="assets/img/peru/ceviche.jpg" alt="" class="circle responsive-img comidas">' +
+                        '<div class="encima">' +
+                          '<p class="txt">Brisas Del Mar Limitada</p>' +
+                        '</div>' +
+                      '</div>' +
+                      '<div class="col s4 col m4">' +
+                        '<img src="assets/img/peru/magico.jpg" alt="" class="circle responsive-img comidas">' +
+                        '<div class="encima">' +
+                          '<p class="txt">Perú Mágico</p>' +
+                        '</div>' +
+                      '</div>' +
+                      '<div class="col s4 col m4">' +
+                        '<img src="assets/img/peru/rocoto.jpg" alt="" class="circle responsive-img comidas pjd">' +
+                        '<div class="encima">' +
+                          '<p class="txt">Rocoto Santiago</p>' +
+                        '</div>' +
+                      '</div>' +
+                      '<div class="col s4 col m4">' +
+                        '<img src="assets/img/peru/tambo.jpg" alt="" class="circle responsive-img comidas doggis">' +
+                        '<div class="encima">' +
+                          '<p class="txt">Tambo Perú</p>' +
+                        '</div>' +
+                      '</div>' +
+                      '<div class="col s4 col m4">' +
+                        '<img src="assets/img/peru/inka.jpg" alt="" class="circle responsive-img comidas maestro">' +
+                        '<div class="encima">' +
+                          '<p class="txt">El Templo Del Inka</p>' +
+                        '</div>' +
+                      '</div>' +
+                      '<div class="col s4 col m4">' +
+                        '<img src="assets/img/peru/aji.jpg" alt="" class="circle responsive-img comidas pincheira">' +
+                        '<div class="encima">' +
+                          '<p class="txt">El Ají Seco</p>' +
+                        '</div>' +
+                      '</div>'
   );
 });
 /*

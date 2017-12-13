@@ -56,7 +56,7 @@ header img{
 
 /*estilos seccion imagenes*/
 .imagenes{
-  margin-top: 25%;
+  margin-top: -28%;
 }
 
 .comidas{
@@ -70,6 +70,10 @@ header img{
   background-color: transparent;
   position: absolute;
   z-index: 2;
+  margin-top: -29%;
+  width: 28%;
+  height: 120px;
+  margin-left: -4px;
 }
 
 .encima:hover{
@@ -80,61 +84,11 @@ header img{
 }
 
 .txt{
-  padding-top: 36%;
+  padding-top: 28%;
   padding-left: 4%;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 
-/*media queries*/
-@media (max-width: 632px){
-  .encima{
-    margin-top: -12.4em;
-    margin-left: -1%;
-    width: 29%;
-    height: 12em;
-  }
-}
-
-@media (min-width: 633px) and (max-width: 691px){
-  .encima{
-    margin-top: -13.4em;
-    margin-left: -1%;
-    width: 28%;
-    height: 13em;
-  }
-}
-
-@media (min-width: 692px) and (max-width: 794px){
-  .encima{
-    margin-top: -15em;
-    width: 27%;
-    height: 15em;
-  }
-}
-
-@media (min-width: 795px) and (max-width: 839px){
-  .encima{
-    margin-top: -15.4em;
-    width: 26%;
-    height: 15em;
-  }
-}
-
-@media (min-width: 840px) and (max-width: 992px){
-  .encima{
-    margin-top: -15.4em;
-    width: 24%;
-    height: 15em;
-  }
-}
-
-@media (min-width: 993px){
-  .encima{
-    margin-top: -14.4em;
-    width: 17%;
-    height: 15em;
-  }
-}
 
