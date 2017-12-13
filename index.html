@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Foodmap</title>
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- inicio div splash -->
+  <div class="splash">
+    <div class="row">
+      </div class="col s12 col m12">
+        <img src="assets/img/foodmap-white.png" alt="">
+        <div class="progress">
+          <div class="indeterminate"></div>
+        </div>
+      </div>
+    </div>
+  <!-- fin div splash  -->
+
+  <!-- inicio div principal -->
+  <div class="principal">
+
+    <!-- inicio del header -->
+    <header>
+      <div class="row">
+        <div class="col s6 offset-s3">
+          <img src="assets/img/foodmap-blue.png" alt="">
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="container">
+    
+        <!-- contenedor buscador -->
+        <div class="row">
+          <ul id="dropdown2" class="dropdown-content col s12">
+            <li>
+              <a href="#!" id="chatarra">Comida Rápida</a>
+            </li>
+            <li>
+              <a href="#!" id="mexicana">Comida Mexicana</a>
+            </li>
+            <li>
+              <a href="#!" id="china">Comida China</a>
+            </li>
+            <li>
+              <a href="#!" id="japonesa">Comida Japonesa</a>
+            </li>
+            <li>
+              <a href="#!" id="italiana">Comida Italiana</a>
+            </li>
+            <li>
+              <a href="#!" id="vegetariana">Comida Vegetariana</a>
+            </li>
+            <li>
+              <a href="#!" id="colombiana">Comida Colombiana</a>
+            </li>
+            <li>
+              <a href="#!" id="peruana">Comida Peruana</a>
+            </li>
+          </ul>
+          <a class="btn dropdown-button" href="#!" data-activates="dropdown2">Busca tu comida favorita
+            <i class="material-icons right">search</i>
+          </a>
+        </div>
+        <!-- fin contenedor buscador -->
+      </div>
+    </section>
+    <!-- fin del header -->
+    
+    <!-- inicio seccion de mapa -->
+    <section class="mapa">
+      <div class="container">
+        <div class="row">
+          <div id="map">
+            <img src="assets/img/mapa.png" alt="" class="responsive-img">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- fin seccion de mapa -->
+    
+    <!-- inicio seccion imagenes -->
+    <section class="imagenes">
+      <div class="container">
+        <div class="row">
+          <h3>Comida Rápida</h3>
+          <div class="col s4">
+            <img src="assets/img/chatarra/mcdonalds.jpg" alt="" class="circle responsive-img comidas">
+            <div class="encima">
+              <p class="txt">McDonalds</p>
+            </div>
+          </div>
+          <div class="col s4">
+            <img src="assets/img/chatarra/kfc.jpg" alt="" class="circle responsive-img comidas">
+            <div class="encima">
+              <p class="txt">KFC</p>
+            </div>
+          </div>
+          <div class="col s4">
+            <img src="assets/img/chatarra/pjd.jpg" alt="" class="circle responsive-img comidas pjd">
+            <div class="encima">
+              <p class="txt">Pedro, Juan Y Diego</p>
+            </div>
+          </div>
+          <div class="col s4">
+            <img src="assets/img/chatarra/doggis.jpg" alt="" class="circle responsive-img comidas doggis">
+            <div class="encima">
+              <p class="txt">Doggis</p>
+            </div>
+          </div>
+          <div class="col s4">
+            <img src="assets/img/chatarra/juanMaestro.jpg" alt="" class="circle responsive-img comidas maestro">
+            <div class="encima">
+              <p class="txt">Juan Maestro</p>
+            </div>
+          </div>
+          <div class="col s4">
+            <img src="assets/img/chatarra/pincheira.jpg" alt="" class="circle responsive-img comidas pincheira">
+            <div class="encima">
+              <p class="txt">Los Pincheira</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin seccion imagenes -->
+  </div>
+  <!-- fin div principal -->
+
+  <!-- api google -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?radius=500&type=restaurant&key=AIzaSyA6lOSv0rWAmZbr8tditeWDVXU4wZAejpk&callback=initMap&libraries=places"
+    type="text/javascript"></script>>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- script propio -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
