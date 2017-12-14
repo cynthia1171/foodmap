@@ -12,7 +12,7 @@ function splash(){
     $(".splash").fadeOut(500);
   }, 3000);
   setTimeout(function () {
-    $(location).attr('href', 'index.html').fadeIn(500)
+    $(location).attr('href', 'principal.html').fadeIn(500)
   }, 3000);
 }
 
